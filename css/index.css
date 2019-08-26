@@ -109,7 +109,7 @@ body {
 }
 ol,
 ul {
-  list-style: none;
+  list-style: circle;
 }
 blockquote,
 q {
@@ -136,6 +136,7 @@ html,
 body {
   font-family: 'Roboto', sans-serif;
   font-size: 62.5%;
+  background-color: #ff6f1a;
 }
 h1,
 h2,
@@ -165,12 +166,10 @@ img {
   height: auto;
 }
 .container {
-  max-width: 900px;
+  max-width: 80%;
   width: 100%;
   margin: 0 auto;
-}
-header {
-  margin: 10px 0;
+  background-color: #fff;
 }
 header nav {
   display: flex;
@@ -204,6 +203,31 @@ header nav .navLinks a {
   font-size: 1.6rem;
   color: #ff2c26;
 }
+footer {
+  margin: 100px 0;
+  background-color: #ff6f1a;
+  text-align: center;
+}
+footer p {
+  color: #fff;
+}
+footer img {
+  width: 5%;
+  margin-top: 2rem;
+}
+footer .footer-list {
+  font-size: 1.5rem;
+  color: #fff;
+}
+footer .footer-list li {
+  display: inline-block;
+  padding: 15px;
+  color: #fff;
+}
+footer .footer-list a {
+  color: #fff;
+  text-decoration: none;
+}
 .home main {
   background: linear-gradient(#d8d8d881, transparent 10%), linear-gradient(0deg, #d8d8d881, transparent), url("../../img/header.jpg");
   background-color: #cccccc;
@@ -211,13 +235,14 @@ header nav .navLinks a {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  position: inherit;
+  position: relative;
+  margin-bottom: 20px;
 }
 .home main .hero {
   position: absolute;
   padding: 20px 40px;
-  top: 364px;
-  left: 225px;
+  top: 300px;
+  left: 40px;
   background-color: rgba(218, 173, 154, 0.6);
   text-align: center;
 }
