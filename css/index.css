@@ -180,6 +180,7 @@ header nav .logo {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin: 0 auto;
 }
 header nav .logo img {
   width: 5%;
@@ -211,13 +212,14 @@ header nav .navLinks a {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  position: inherit;
+  position: relative;
+  margin-bottom: 20px;
 }
 .home main .hero {
   position: absolute;
   padding: 20px 40px;
-  top: 364px;
-  left: 225px;
+  top: 300px;
+  left: 40px;
   background-color: rgba(218, 173, 154, 0.6);
   text-align: center;
 }
@@ -245,6 +247,11 @@ header nav .navLinks a {
 }
 .home .btn:hover {
   background-color: #ff8f8c;
+}
+.home .row {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
 }
 section h2 {
   text-decoration: underline;
