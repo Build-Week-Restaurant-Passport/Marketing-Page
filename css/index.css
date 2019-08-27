@@ -255,7 +255,7 @@ footer .footer-list {
 @media (max-width: 500px) {
   footer .footer-list {
     flex-flow: row wrap;
-    margin-left: 40px;
+    margin-left: 20px;
   }
 }
 footer .footer-list li {
@@ -281,7 +281,7 @@ footer .footer-list a {
   }
 }
 .home main {
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../../img/header.jpg");
+  background: url("../img/Marketing_Main_Image.png");
   background-color: #cccccc;
   height: 80vh;
   background-position: center;
@@ -298,13 +298,8 @@ footer .footer-list a {
   }
 }
 .home main .hero {
-  margin: 0 36px 100px;
-  padding: 30px 70px;
-  background-color: rgba(255, 174, 128, 0.6);
-  position: absolute;
-  padding: 30px 90px;
-  top: 200px;
-  left: 40px;
+  margin: 0 0 80px 40px;
+  padding: 20px;
   background-color: rgba(255, 207, 179, 0.6);
   text-align: center;
   border-radius: 10px;
@@ -312,9 +307,7 @@ footer .footer-list a {
 @media (max-width: 500px) {
   .home main .hero {
     margin: 0 auto;
-    top: 100px;
-    left: 25px;
-    padding: 30px;
+    padding: 40px;
   }
 }
 .home main .hero h2 {
@@ -361,11 +354,6 @@ footer .footer-list a {
 .home .btn:hover {
   background-color: #ff8f8c;
 }
-.home .row {
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: space-between;
-}
 section {
   margin-bottom: 20px;
 }
@@ -389,7 +377,6 @@ section .content-wrapper {
 }
 section .content-img {
   width: 60%;
-  width: 52%;
 }
 @media (max-width: 500px) {
   section .content-img {
@@ -422,15 +409,28 @@ section .content {
     margin: 0;
     padding: 0;
   }
+  section .content h3 {
+    font-size: 1.8rem;
+  }
 }
 section .content p {
   color: #000;
   font-size: 2rem;
 }
+@media (max-width: 500px) {
+  section .content p {
+    font-size: 1.3rem;
+  }
+}
 section .content a {
   color: #ff2c26;
   text-decoration: none;
   font-size: 2rem;
+}
+@media (max-width: 500px) {
+  section .content a {
+    font-size: 1.4rem;
+  }
 }
 section .content i {
   padding-left: 10px;
@@ -441,6 +441,12 @@ section .bottom-content {
   flex-flow: row wrap;
   max-width: 100%;
 }
+@media (max-width: 500px) {
+  section .bottom-content {
+    flex-flow: column wrap;
+    align-content: center;
+  }
+}
 section .bottom-content p {
   text-align: center;
 }
@@ -450,7 +456,17 @@ section .bottom-content .bottom-wrapper {
   align-items: center;
   width: 33%;
 }
+@media (max-width: 500px) {
+  section .bottom-content .bottom-wrapper {
+    width: 100%;
+  }
+}
 section .bottom-content .btn {
   width: 200px;
   margin-top: 15px;
+}
+@media (max-width: 500px) {
+  section .bottom-content .btn {
+    margin: 0 auto;
+  }
 }
