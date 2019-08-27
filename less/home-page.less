@@ -13,7 +13,7 @@
         padding: 30px 90px;
         top: 200px;
         left: 40px;
-        background-color: rgba(255, 174, 128,.6);
+        background-color: rgba(255, 207, 179, .6);
         text-align: center;
         border-radius: 10px;
         h2 {
@@ -52,6 +52,7 @@ section {
         color: @font-color;
         text-align: center;
         font-size: 3rem;
+        margin-top: 20px;
     }
 
     .content-wrapper {
@@ -60,7 +61,7 @@ section {
     }
 
     .content-img {
-        width: 60%;
+        width: 52%;
         // height: 200px;
 
         img {
@@ -75,7 +76,7 @@ section {
     .content {
         display: flex;
         flex-flow: row wrap;
-        margin: 20px;
+        margin-left: 40px;
         padding: 20px;
         width: 30%;
         font-size: 3rem;
@@ -83,25 +84,40 @@ section {
 
         p {
             color: #000;
+            font-size: 2rem;
         }
 
         a {
             color: @font-color;
             text-decoration: none;
+            font-size: 2rem;
         }
 
         i {
             padding-left: 10px;
         }
     }
-    .phone-img {
-      display: flex;
-      justify-content: center;
-    }
+ 
     .bottom-content {
       display: flex;
-      flex-flow: column wrap;
-      align-items: center;
+      justify-content: center;
+      flex-flow: row wrap;
+      max-width: 100%;
+
+      // .phone-img {
+      //   width: 600px;
+      // }
+
+      p {
+        text-align: center;
+      }
+
+      .bottom-wrapper {
+        display: flex;
+        flex-flow: column wrap;
+        align-items: center;
+        width: 33%;
+      }
 
       .btn {
         width: 200px; 
