@@ -180,9 +180,22 @@ header nav .logo {
   align-items: center;
   margin: 0 auto;
 }
+@media (max-width: 500px) {
+  header nav .logo {
+    justify-content: flex-start;
+    width: 60%;
+    margin: 0;
+  }
+}
 header nav .logo img {
   width: 5%;
   margin-left: 150px;
+}
+@media (max-width: 500px) {
+  header nav .logo img {
+    width: 20%;
+    margin: 0 10px;
+  }
 }
 header nav .logo a {
   text-decoration: none;
@@ -192,10 +205,20 @@ header nav .logo a {
 header nav .logo h1 {
   font-size: 2rem;
 }
+@media (max-width: 500px) {
+  header nav .logo h1 {
+    display: none;
+  }
+}
 header nav .navLinks {
   display: flex;
   justify-content: flex-end;
   align-items: center;
+}
+@media (max-width: 500px) {
+  header nav .navLinks {
+    width: 100%;
+  }
 }
 header nav .navLinks a {
   display: inline-block;
@@ -216,33 +239,69 @@ footer img {
   width: 5%;
   margin-top: 2rem;
 }
+@media (max-width: 500px) {
+  footer img {
+    width: 10%;
+  }
+}
 footer .footer-list {
   font-size: 1.5rem;
   color: #fff;
   display: flex;
   justify-content: center;
+  flex-flow: row wrap;
   padding: 20px;
   margin-left: 30px;
 }
+@media (max-width: 500px) {
+  footer .footer-list {
+    flex-flow: row wrap;
+    margin-left: 40px;
+  }
+}
 footer .footer-list li {
   color: #fff;
+}
+@media (max-width: 500px) {
+  footer .footer-list li {
+    padding: 10px 0;
+  }
+  footer .footer-list li:last-child {
+    list-style-type: none;
+  }
 }
 footer .footer-list a {
   color: #fff;
   text-decoration: none;
   margin-right: 30px;
 }
+@media (max-width: 500px) {
+  footer .footer-list a {
+    padding: 10px 0;
+    text-align: center;
+  }
+}
 .home main {
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), linear-gradient(0deg, #d8d8d881, transparent), url("../../img/header.jpg");
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../../img/header.jpg");
   background-color: #cccccc;
-  height: 500px;
+  height: 80vh;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  position: relative;
   margin-bottom: 20px;
+  display: flex;
+  align-items: flex-end;
+}
+@media (max-width: 500px) {
+  .home main {
+    align-items: center;
+    height: 50vh;
+  }
 }
 .home main .hero {
+  margin: 0 36px 100px;
+  padding: 30px 70px;
+  background-color: rgba(255, 174, 128, 0.6);
   position: absolute;
   padding: 30px 90px;
   top: 200px;
@@ -251,21 +310,40 @@ footer .footer-list a {
   text-align: center;
   border-radius: 10px;
 }
+@media (max-width: 500px) {
+  .home main .hero {
+    margin: 0 auto;
+    top: 100px;
+    left: 25px;
+    padding: 30px;
+  }
+}
 .home main .hero h2 {
   color: whitesmoke;
   font-size: 4.5rem;
   margin-top: 20px;
+  text-shadow: 2px 2px  black;
+}
+@media (max-width: 500px) {
+  .home main .hero h2 {
+    font-size: 2rem;
+    font-weight: bold;
+    text-shadow: 1px 1px black;
+  }
 }
 .home main .hero h3 {
   color: whitesmoke;
   font-size: 3.5rem;
   margin-bottom: 20px;
   font-size: 3.3rem;
+  text-shadow: 2px 2px black;
 }
-.home main .hero h3 {
-  color: whitesmoke;
-  font-size: 3.1rem;
-  margin-bottom: 10px;
+@media (max-width: 500px) {
+  .home main .hero h3 {
+    font-size: 2rem;
+    font-weight: bold;
+    text-shadow: 1px 1px black;
+  }
 }
 .home .btn {
   display: block;
@@ -289,6 +367,9 @@ footer .footer-list a {
   flex-flow: row wrap;
   justify-content: space-between;
 }
+section {
+  margin-bottom: 20px;
+}
 section h2 {
   text-decoration: underline;
   color: #ff2c26;
@@ -300,8 +381,22 @@ section .content-wrapper {
   display: flex;
   justify-content: center;
 }
+@media (max-width: 500px) {
+  section .content-wrapper {
+    flex-flow: column wrap;
+    align-items: center;
+    margin: 0 15px;
+  }
+}
 section .content-img {
+  width: 60%;
   width: 52%;
+}
+@media (max-width: 500px) {
+  section .content-img {
+    width: 100%;
+    margin-left: -40px;
+  }
 }
 section .content-img img {
   width: 100%;
@@ -318,6 +413,16 @@ section .content {
   width: 30%;
   font-size: 3rem;
   color: #ff2c26;
+}
+@media (max-width: 500px) {
+  section .content {
+    flex-flow: column wrap;
+    align-self: center;
+    width: 100%;
+    font-size: 1.6rem;
+    margin: 0;
+    padding: 0;
+  }
 }
 section .content p {
   color: #000;
