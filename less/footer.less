@@ -11,6 +11,9 @@ footer {
     img {
         width: 5%;
         margin-top: 2rem;
+        @media @mobile {
+            width: 10%;
+        }
     }
 
     .footer-list {
@@ -18,23 +21,31 @@ footer {
         color: #fff;
         display: flex;
         justify-content: center;
+        flex-flow: row wrap;
         padding: 20px;
-        
+        @media @mobile {
+            flex-flow: row wrap;  
+            margin-left: 40px;
+        }
 
         li {
-            // display: inline-block;
-            // padding: 0 14px 0 14px;
             color: #fff;
-            
-            
+            @media @mobile {
+                padding: 10px 0; 
+                &:last-child {
+                    list-style-type: none;
+                }
+            }
         }
 
         a{
             color: #fff;
             text-decoration: none;
-            // padding: 0 24px;
             margin-right: 30px;
-            
+            @media @mobile {
+                padding: 10px 0; 
+                text-align: center;
+            }
         }
 
         

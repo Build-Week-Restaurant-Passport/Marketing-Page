@@ -6,10 +6,18 @@ header {
       justify-content: center;
       align-items: center;
       margin: 0 auto;
-      // position: absolute;
+      @media @mobile {
+        justify-content: flex-start;
+        width: 60%;
+        margin: 0;
+      }
       img{
         width: 5%;
         margin-left: 150px;
+        @media @mobile {
+          width: 20%;
+          margin: 0 10px;
+        }
       }
       a {
         text-decoration: none;
@@ -18,12 +26,18 @@ header {
       }
       h1{
         font-size: 2rem;
+        @media @mobile{
+          display: none;
+        }
       }
     }
     .navLinks {
       display: flex;
       justify-content: flex-end;
       align-items: center;
+      @media @mobile {
+        width: 100%;
+      }
       a {
         display: inline-block;
         text-decoration: none;

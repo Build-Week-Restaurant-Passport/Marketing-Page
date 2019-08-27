@@ -1,36 +1,53 @@
 .home {
   main {
-      background:  linear-gradient( rgba(0,0,0,0.5), rgba(0, 0, 0, 0.5) ), linear-gradient(0deg, #d8d8d881, transparent), url("../../img/header.jpg");
+      background:  linear-gradient( rgba(0,0,0,0.5), rgba(0, 0, 0, 0.5) ), url("../../img/header.jpg");
       background-color: #cccccc; 
-      height: 500px; 
+      height: 80vh; 
       background-position: center; 
       background-repeat: no-repeat; 
       background-size: cover; 
-      position: relative;
       margin-bottom: 20px;
+      display: flex;
+      align-items: flex-end;
+      @media @mobile {
+        align-items: center;
+        height: 50vh;
+      }
       .hero {
-        position: absolute;
-        padding: 30px 90px;
-        top: 200px;
-        left: 40px;
+        margin: 0 36px 100px;
+       padding: 30px 70px;
         background-color: rgba(255, 174, 128,.6);
         text-align: center;
         border-radius: 10px;
+        @media @mobile {
+          margin: 0 auto;
+          top: 100px;
+          left: 25px;
+          padding: 30px;
+          ;
+        }
         h2 {
           color: whitesmoke;
           font-size: 4.5rem;
           margin-top: 20px;
+          text-shadow: 2px 2px  black;
+          @media @mobile {
+            font-size: 2rem;
+            font-weight: bold;
+            text-shadow: 1px 1px black;
+          }
         }
         h3 {
           color: whitesmoke;
           font-size: 3.5rem;
           margin-bottom: 20px;
           font-size: 3.3rem;
-        }
-        h3 {
-          color: whitesmoke;
-          font-size: 3.1rem;
-          margin-bottom: 10px;
+          text-shadow: 2px 2px black;
+          @media @mobile {
+            font-size: 2rem;
+            font-weight: bold;
+            text-shadow: 1px 1px black;
+          }
         }
       }
   }
@@ -38,6 +55,7 @@
     .custom-btn(@width: 100%;);
      text-decoration: none;
      font-size: 1.5rem;
+
   }
   .row {
     display: flex;
@@ -46,6 +64,7 @@
   }
 }
 section {
+    margin-bottom: 20px;
 
     h2 {
         text-decoration: underline;
@@ -57,11 +76,19 @@ section {
     .content-wrapper {
         display: flex;
         justify-content: center;
+        @media @mobile {
+          flex-flow: column wrap;
+          align-items: center;
+          margin: 0 15px;
+        }
     }
 
     .content-img {
         width: 60%;
-        // height: 200px;
+       @media @mobile {
+         width: 100%;
+         margin-left: -40px;
+       }
 
         img {
             width: 100%;
@@ -80,6 +107,14 @@ section {
         width: 30%;
         font-size: 3rem;
         color: @font-color;
+        @media @mobile {
+          flex-flow: column wrap;
+          align-self: center;
+          width: 100%;
+          font-size: 1.6rem;
+          margin: 0;
+          padding: 0;
+        }
 
         p {
             color: #000;
