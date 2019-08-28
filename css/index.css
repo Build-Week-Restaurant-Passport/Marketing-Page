@@ -119,7 +119,7 @@ blockquote:before,
 blockquote:after,
 q:before,
 q:after {
-  content: '';
+  content: "";
   content: none;
 }
 table {
@@ -134,7 +134,7 @@ html {
 }
 html,
 body {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   font-size: 62.5%;
 }
 h1,
@@ -142,7 +142,7 @@ h2,
 h3,
 h4,
 h5 {
-  font-family: 'Signika', cursive;
+  font-family: "Signika", cursive;
 }
 h1 {
   font-size: 4rem;
@@ -184,6 +184,11 @@ header nav .logo {
     justify-content: flex-start;
     width: 60%;
     margin: 0;
+  }
+}
+@media (max-width: 800px) {
+  header nav .logo {
+    width: 50%;
   }
 }
 header nav .logo img {
@@ -230,12 +235,13 @@ footer {
   background-color: #ff6f1a;
   text-align: center;
   width: 100%;
+  margin-top: 10px;
 }
 footer p {
   color: #fff;
 }
 footer img {
-  width: 5%;
+  width: 3%;
   margin-top: 2rem;
 }
 @media (max-width: 500px) {
@@ -310,11 +316,16 @@ footer .footer-list a {
     padding: 19px 20px;
   }
 }
+@media (max-width: 800px) {
+  .home main .hero {
+    margin: auto;
+  }
+}
 .home main .hero h2 {
   color: whitesmoke;
   font-size: 4.5rem;
   margin-top: 20px;
-  text-shadow: 1px 1px  gray;
+  text-shadow: 1px 1px gray;
 }
 @media (max-width: 500px) {
   .home main .hero h2 {
@@ -397,6 +408,11 @@ section .content {
   width: 40%;
   font-size: 3rem;
   color: #e60800;
+}
+@media (max-width: 800px) {
+  section .content {
+    width: 45%;
+  }
 }
 @media (max-width: 500px) {
   section .content {
@@ -496,9 +512,6 @@ section .bottom-content .btn {
   width: 100%;
   margin: 0 auto;
 }
-.about-container-home main {
-  background-color: #fff;
-}
 .about-container-home .main-content {
   display: flex;
   flex-flow: column wrap;
@@ -507,7 +520,8 @@ section .bottom-content .btn {
 }
 .about-container-home .main-content h1 {
   text-align: center;
-  font-family: 'Caveat Brush', cursive;
+  text-transform: uppercase;
+  font-family: "Caveat Brush", cursive;
   font-size: 10rem;
 }
 @media (max-width: 500px) {
@@ -541,6 +555,11 @@ section .bottom-content .btn {
   align-items: center;
   width: 33%;
 }
+@media (max-width: 800px) {
+  .about-container-home .about-content {
+    width: 50%;
+  }
+}
 @media (max-width: 500px) {
   .about-container-home .about-content {
     width: 100%;
@@ -554,10 +573,11 @@ section .bottom-content .btn {
   margin: 30px 30px 0px 30px;
 }
 .about-container-home .about-content h2 {
-  font-family: 'Caveat Brush', cursive;
+  font-family: "Caveat Brush", cursive;
   color: #000;
   text-decoration: none;
   font-size: 3.5rem;
+  text-transform: uppercase;
 }
 .about-container-home .about-content h3 {
   text-align: center;
@@ -567,6 +587,6 @@ section .bottom-content .btn {
 }
 .about-container-home .about-content p {
   text-align: center;
-  max-width: 80%;
+  max-width: 86%;
   font-style: italic;
 }
