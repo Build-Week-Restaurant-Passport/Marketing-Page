@@ -130,7 +130,7 @@ table {
   box-sizing: border-box;
 }
 html {
-  font-size: 62.5%;
+  font-size: 1000%;
 }
 html,
 body {
@@ -217,7 +217,7 @@ header nav .navLinks {
 }
 @media (max-width: 500px) {
   header nav .navLinks {
-    width: 50%;
+    width: 89%;
   }
 }
 header nav .navLinks a {
@@ -308,7 +308,7 @@ footer .footer-list a {
 @media (max-width: 500px) {
   .home main .hero {
     margin: 0 auto;
-    padding: 40px;
+    padding: 19px 20px;
   }
 }
 .home main .hero h2 {
@@ -351,7 +351,7 @@ footer .footer-list a {
   font-size: 1.5rem;
 }
 .home .btn:hover {
-  background-color: #ff534d;
+  background-color: #ff3129;
 }
 section {
   margin-bottom: 20px;
@@ -393,9 +393,9 @@ section .content-img img {
 section .content {
   display: flex;
   flex-flow: row wrap;
-  margin-left: 40px;
+  margin-left: 20px;
   padding: 20px;
-  width: 30%;
+  width: 40%;
   font-size: 3rem;
   color: #e60800;
 }
