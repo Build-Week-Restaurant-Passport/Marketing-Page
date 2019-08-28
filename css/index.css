@@ -469,3 +469,64 @@ section .bottom-content .btn {
     margin: 0 auto;
   }
 }
+.about-container-home nav {
+  background-color: #fff;
+}
+.about-container-home nav .logo {
+  display: flex;
+  justify-content: center;
+}
+.about-container-home .about-drawing {
+  margin-top: 1.5px;
+  padding: 5px;
+  border-top: 1px solid #ff6f1a;
+  width: 100%;
+}
+.about-container-home main {
+  background-color: #fff;
+}
+.about-container-home main h1 {
+  text-align: center;
+  font-family: 'Caveat Brush', cursive;
+  font-size: 10rem;
+}
+.about-container-home main p {
+  text-align: center;
+  margin-top: 20px;
+}
+.about-container-home .about-content-wrapper {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  background-color: #fff;
+}
+.about-container-home .about-content {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+.about-container-home .about-content img {
+  width: 250px;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 5px;
+  margin: 30px 30px 0px 30px;
+}
+.about-container-home .about-content h2 {
+  font-family: 'Caveat Brush', cursive;
+  color: #000;
+  text-decoration: none;
+  font-size: 3.5rem;
+}
+.about-container-home .about-content h3 {
+  text-align: center;
+  max-width: 80%;
+  font-size: 2rem;
+  font-weight: bold;
+}
+.about-container-home .about-content p {
+  text-align: center;
+  max-width: 80%;
+  font-style: italic;
+}
