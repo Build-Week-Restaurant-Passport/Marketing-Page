@@ -26,7 +26,12 @@
     margin-top: 1.5px;
     padding: 5px;
     width: 100%;
+    height: 390px;
+    object-fit: contain;
     margin: 0 auto;
+    @media @mobile {
+      height: auto;
+    }
   }
 
   .main-content {
@@ -48,7 +53,6 @@
     p {
       text-align: center;
       margin-top: 20px;
-      max-width: 800px;
     }
   }
   .about-content-wrapper {
@@ -95,15 +99,12 @@
 
     h3 {
       text-align: center;
-      max-width: 80%;
       font-size: 2rem;
-      font-weight: bold;
-      // padding: 2px;
+      padding-bottom: 6px;
     }
 
     p {
       text-align: center;
-      max-width: 86%;
       font-style: italic;
     }
   }

@@ -510,7 +510,14 @@ section .bottom-content .btn {
   margin-top: 1.5px;
   padding: 5px;
   width: 100%;
+  height: 390px;
+  object-fit: contain;
   margin: 0 auto;
+}
+@media (max-width: 500px) {
+  .about-container-home .about-drawing {
+    height: auto;
+  }
 }
 .about-container-home .main-content {
   display: flex;
@@ -532,7 +539,6 @@ section .bottom-content .btn {
 .about-container-home .main-content p {
   text-align: center;
   margin-top: 20px;
-  max-width: 800px;
 }
 .about-container-home .about-content-wrapper {
   display: flex;
@@ -581,12 +587,10 @@ section .bottom-content .btn {
 }
 .about-container-home .about-content h3 {
   text-align: center;
-  max-width: 80%;
   font-size: 2rem;
-  font-weight: bold;
+  padding-bottom: 6px;
 }
 .about-container-home .about-content p {
   text-align: center;
-  max-width: 86%;
   font-style: italic;
 }
