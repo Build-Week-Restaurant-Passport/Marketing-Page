@@ -426,6 +426,7 @@ section .content {
 section .content p {
   color: #000;
   font-size: 2rem;
+  width: 100%;
 }
 @media (max-width: 500px) {
   section .content p {
